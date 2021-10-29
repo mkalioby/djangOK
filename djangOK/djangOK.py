@@ -1,16 +1,15 @@
 import sys
 import os
 
-def setup_django(settings_file):
+def setup_django(manage_folder='.'):
     try:
-        import django
-        os.environ.setdefault("DJANGO_SETTINGS_MODULE", settings_file)
-        django.setup()
+        subprocess.check_call(['python', 'manage.py', 'check'])
         exit(0)
-    except Exception: 
+    except Exception:
+        import traceback
+        print(traceback.format_exc())
         exit(-1)
 
 
-if __name__=="__main__":
+if __name__=='__main__':
     setup_django(sys.argv[1])
-
