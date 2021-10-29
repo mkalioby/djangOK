@@ -4,11 +4,11 @@ import os
 
 def setup_django(manage_folder='.'):
     try:
-        l=[]
+        l=''
         if manage_folder!='.':
-            l = ['cd', manage_folder]
-        l.extend(['python', 'manage.py', 'check'])
-        subprocess.check_call(l)
+            l += 'cd '+  manage_folder+';'
+        l+='python', 'manage.py', 'check'
+        subprocess.check_call(l,shell=True)
         exit(0)
     except Exception:
         exit(-1)
