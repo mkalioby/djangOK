@@ -1,4 +1,5 @@
 import sys
+import subprocess
 import os
 
 def setup_django(manage_folder='.'):
