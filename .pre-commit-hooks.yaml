@@ -1,0 +1,8 @@
+-   id: djangOK
+    name: djangOK
+    description: Make sure that django can start
+    entry: djangOK
+    language: python
+    types: [python]
+    args: [settings-file]
+
