@@ -3,6 +3,6 @@
     description: Make sure that django can start
     entry: djangOK
     language: python
-    types: [python]
-    args: [settings-file]
-
+    types: []
+    always_run: true
+    args: []
