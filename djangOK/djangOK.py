@@ -7,7 +7,8 @@ def setup_django(manage_folder='.'):
         l=''
         if manage_folder!='.':
             l += 'cd '+  manage_folder+';'
-        l+='python', 'manage.py', 'check'
+        l+='python manage.py check'
+        print(l)
         subprocess.check_call(l,shell=True)
         exit(0)
     except Exception:
