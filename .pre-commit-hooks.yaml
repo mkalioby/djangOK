@@ -8,8 +8,8 @@
     fail_fast: true
     pass_filenames: false
     args: []
--   id: django_Migrate
-    name: djang_Migrate
+-   id: django_migrations
+    name: django Migrations 👍
     description: Make sure that django migrations is OK
     entry: python manage.py migrate
     language: system
