@@ -1,7 +1,7 @@
 -   id: djangOK
     name: djangOK
     description: Make sure that django can start
-    entry: djangOK
+    entry: python manage.py check
     language: system
     types: []
     always_run: true
