@@ -4,7 +4,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='djangOK',
-    version='0.1.1',
+    version='0.8.2',
     description='Make sure that Django will setup',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',

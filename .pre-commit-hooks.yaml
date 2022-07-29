@@ -2,7 +2,9 @@
     name: djangOK
     description: Make sure that django can start
     entry: djangOK
-    language: python
+    language: system
     types: []
     always_run: true
+    fail_fast: true
+    pass_filenames: false
     args: []
