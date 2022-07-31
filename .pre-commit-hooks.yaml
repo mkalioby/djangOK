@@ -11,7 +11,7 @@
 -   id: django_migrations
     name: django Migrations 👍
     description: Make sure that django migrations is OK
-    entry: python manage.py migrate
+    entry: python manage.py migrate --fake
     language: system
     types: []
     always_run: true
